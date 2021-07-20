@@ -1,0 +1,6 @@
+#reload countrycolors
+
+DEL = {
+	color = rgb { 74 74 74 }
+	color_ui = rgb { 74 74 74 }
+}
