@@ -1,7 +1,10 @@
-Modding Utility: Blank Map Template: 5632×2048 (Vanilla Size)
+-------DECADE OF LIBERTY-------
+This is a WIP (Work in Progress) mod for Hearts of Iron 4. It encompasses the later Republica timeline, which originates from the AFOR
+(Alternate Future of Republica) animated countryball series published by Bluez Studios. We are currently in an extremely early stage
+of development.
 
-This is a tool for modders interested in making a total overhaul of the map. The old province map is replaced by a new one with just 46 giant rectangular provinces. In addition, all terrain features have been removed.
+VERSION: 0.0.1
 
-This mod is technically playable, with one test country. This is just for testing that a new game can successfully start. There are still many errors using this with the vanilla game; only game-crashing references to non-existant states/strategic regions/provinces, etc. were removed.
-
-Enjoy!
+Lead Dev: ZeeMan78
+Developers:
+-Titan
