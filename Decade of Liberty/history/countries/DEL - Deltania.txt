@@ -22,8 +22,8 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Delvar Oris"
-	desc = ""
+	name = "2015Delta"
+	desc = "The greatest leader in Republica"
 	picture = ""
 	ideology = authoritarianism
 	traits = {
