@@ -32,5 +32,4 @@ replace_path="gfx"
 replace_path="events"
 replace_path="portraits"
 replace_path="common/country_leader"
-replace_path="interface"
 
