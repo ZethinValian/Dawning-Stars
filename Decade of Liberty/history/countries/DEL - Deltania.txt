@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 
 
 set_politics = {
-	ruling_party = fascist
+	ruling_party = totalitarianism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -16,16 +16,16 @@ set_politics = {
 
 set_popularities = {
 	democratic = 37
-	fascism = 48
+	totalitarianism = 48
 	communism = 2
 	neutrality = 13
 }
 
 create_country_leader = {
-	name = "Delvar Oris"
+	name = "Delta2015"
 	desc = ""
 	picture = ""
-	ideology = fascism_ideology
+	ideology = totalitarianism
 	traits = {
 		#
 	}
