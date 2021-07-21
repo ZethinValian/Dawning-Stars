@@ -25,7 +25,7 @@ create_country_leader = {
 	name = "2015Delta"
 	desc = "The greatest leader in Republica"
 	picture = ""
-	ideology = authoritarianism
+	ideology = totalitarianism
 	traits = {
 		#
 	}
