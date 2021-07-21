@@ -1,5 +1,5 @@
-name="Oasis test map 3"
-path="mod/Oasis test map 3"
+name="Decade of Liberty"
+path="mod/Decade of Liberty"
 replace_path="history/states"
 tags={
 	"Map"
