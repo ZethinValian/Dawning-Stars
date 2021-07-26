@@ -1,4 +1,4 @@
-﻿capital = 174
+capital = 194
 
 # Starting tech
 set_technology = {
@@ -8,24 +8,25 @@ set_technology = {
 set_convoys = 1
 
 set_politics = {
-	ruling_party = authoritarianism
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 37
-	authoritarianism = 48
-	communism = 2
-	neutrality = 13
+	democratic = 39
+	authoritarianism = 24
+	communism = 3
+	neutrality = 32
+	fascism = 2
 }
 
 create_country_leader = {
-	name = "Delvar Oris"
-	desc = "The greatest leader in Republica"
+	name = "Envaritanyo Velan"
+	desc = "Revolutionary of the Zorian people"
 	picture = ""
-	ideology = authoritarianism_leader
+	ideology = conservatism
 	traits = {
 		#
 	}

@@ -4,3 +4,8 @@ DEL = {
 	color = rgb { 74 74 74 }
 	color_ui = rgb { 74 74 74 }
 }
+
+ZOH = {
+	color = rgb { 213 48 255 }
+	color_ui = rgb { 213 48 255 }
+}

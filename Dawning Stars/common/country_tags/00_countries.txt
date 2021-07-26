@@ -1,1 +1,2 @@
 DEL = "countries/Deltania.txt"
+ZOH = "countries/Zoriniah.txt"
