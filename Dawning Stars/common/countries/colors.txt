@@ -6,6 +6,6 @@ DEL = {
 }
 
 ZOH = {
-	color = rgb { 213 48 255 }
-	color_ui = rgb { 213 48 255 }
+	color = rgb { 149 34 181 }
+	color_ui = rgb { 149 34 181 }
 }

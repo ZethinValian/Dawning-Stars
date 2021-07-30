@@ -23,7 +23,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Delvar Oris"
-	desc = "The greatest leader in Republica"
+	desc = "The greatest leader in Renorica"
 	picture = "delvar_oris.dds"
 	ideology = authoritarianism_ideology
 	traits = {
