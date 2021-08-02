@@ -9,3 +9,8 @@ ZOH = {
 	color = rgb { 149 34 181 }
 	color_ui = rgb { 149 34 181 }
 }
+
+FRE = {
+	color = rgb { 114 206 88 }
+	color_ui = rgb { 114 206 88 }
+}

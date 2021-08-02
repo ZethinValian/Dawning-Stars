@@ -1,4 +1,14 @@
 leader_traits = {
+
+	aging_minister = {
+		random = no
+		political_power_factor = -0.15
+	}
+
+	beacon_of_democracy = {
+		random = no
+		democratic_drift = 0.01
+		trade_opinion_factor = 0.25
 	
 	dictator = {
 		random = no
