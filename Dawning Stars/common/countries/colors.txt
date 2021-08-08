@@ -14,3 +14,8 @@ FRE = {
 	color = rgb { 114 206 88 }
 	color_ui = rgb { 114 206 88 }
 }
+
+SAR = {
+	color = rgb { 216 0 140 }
+	color_ui = rgb { 216 0 140 }
+}
