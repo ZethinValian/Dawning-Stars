@@ -5,7 +5,7 @@ tags={
 	"Utilities"
 }
 picture="blank_map_template_5632x2048.jpg"
-supported_version="1.10.*"
+supported_version="1.11.*"
 
 replace_path="common/ai_peace"
 replace_path="common/ai_strategy"
