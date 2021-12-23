@@ -1,0 +1,10 @@
+state={
+	id=194
+	name="Gallet"
+	provinces={
+		2404 3881 5815 10855 10925 10960 10994 11024 11049 11116 11175 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

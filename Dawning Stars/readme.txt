@@ -12,5 +12,3 @@ Story Head: ZeeMan78
 Developers:
 -ZTitan7
 -Tycho "Korochun"
--Bad_Player
--Panzer

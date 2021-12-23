@@ -1,0 +1,10 @@
+state={
+	id=585
+	name="South Guran"
+	provinces={
+		3136 5182 5690 6898 11559 11566 11604 11617 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

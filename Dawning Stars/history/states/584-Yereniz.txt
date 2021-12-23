@@ -1,0 +1,10 @@
+state={
+	id=584
+	name="Yereniz"
+	provinces={
+		342 875 967 3525 9500 9582 9583 9670 9768 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

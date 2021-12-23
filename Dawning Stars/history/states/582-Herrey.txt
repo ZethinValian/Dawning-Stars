@@ -1,0 +1,10 @@
+state={
+	id=582
+	name="Herrey"
+	provinces={
+		2860 4024 4086 4656 6184 10051 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

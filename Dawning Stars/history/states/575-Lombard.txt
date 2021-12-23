@@ -1,0 +1,16 @@
+state={
+	id=575
+	name="Lombard"
+	provinces={
+		62 3602 5756 6157 9533 
+	}
+	manpower=5326000
+
+	state_category = megalopolis
+
+	history={
+		add_core_of = ZOH ZOR
+		owner = ZOH
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

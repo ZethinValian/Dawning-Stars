@@ -1,0 +1,10 @@
+state={
+	id=586
+	name="North Guran"
+	provinces={
+		772 1919 3894 11346 11347 11419 11420 11421 11429 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,10 @@
+state={
+	id=591
+	name="Correl"
+	provinces={
+		248 1449 4022 4215 4541 4545 5537 6926 10012 10053 10060 10112 10141 10142 10166 10167 10237 10258 10295 10337 10358 10369 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,11 @@
+
+state={
+	id=583
+	name="Trazzen"
+	provinces={
+		2439 4837 6334 6425 9605 9627 9688 9787 9797 9858 9915 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

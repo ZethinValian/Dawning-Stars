@@ -1,0 +1,10 @@
+state={
+	id=633
+	name="STATE_633"
+	provinces={
+		1205 5909 7170 12078 12122 12178 12233 12251 12290 12327 12393 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
