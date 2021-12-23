@@ -1,0 +1,36 @@
+﻿capital = 578
+
+# Starting tech
+set_technology = {
+	
+}
+
+set_convoys = 1
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 74
+	democratic_socialism = 10
+	state_socialism = 2
+	communism = 3
+	monarchism = 6
+	militarism = 0
+	authoritarianism = 5
+}
+
+create_country_leader = {
+	name = "Cyroy Kaolan"
+	desc = "The Champion of Democracy"
+	picture = ""
+	ideology = liberal
+	traits = {
+		aging_minister
+		beacon_of_democracy
+	}
+}

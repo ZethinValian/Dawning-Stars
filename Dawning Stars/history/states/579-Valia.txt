@@ -1,0 +1,10 @@
+state={
+	id=579
+	name="Valia"
+	provinces={
+		3441 5705 6182 9406 9453 9485 9514 9539 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

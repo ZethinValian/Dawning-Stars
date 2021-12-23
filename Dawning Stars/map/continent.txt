@@ -1,0 +1,8 @@
+continents = {
+	renorica
+	onata
+	denerca
+	wenton
+	soto
+	ucre
+}

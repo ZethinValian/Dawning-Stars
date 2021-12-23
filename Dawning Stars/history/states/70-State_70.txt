@@ -1,0 +1,11 @@
+
+state={
+	id=70
+	name="STATE_70"
+	provinces={
+		741 2018 2131 3043 3960 4614 7617 15403 15405 15408 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

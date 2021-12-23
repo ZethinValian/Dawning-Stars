@@ -1,0 +1,11 @@
+
+state={
+	id=492
+	name="STATE_492"
+	provinces={
+		806 861 2464 2966 3569 6576 6961 14667 14672 14686 14702 14725 14739 14748 14757 14759 14777 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

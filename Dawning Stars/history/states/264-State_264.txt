@@ -1,0 +1,11 @@
+
+state={
+	id=264
+	name="STATE_264"
+	provinces={
+		226 2466 3240 5425 10743 10801 10856 10900 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

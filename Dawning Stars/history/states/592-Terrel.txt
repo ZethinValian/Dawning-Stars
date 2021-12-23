@@ -1,0 +1,10 @@
+state={
+	id=592
+	name="Terrel"
+	provinces={
+		773 2577 4874 7028 7376 10316 10395 10500 10535 10602 10719 10757 10758 10785 10819 10828 10835 10853 10896 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

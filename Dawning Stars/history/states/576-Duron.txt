@@ -1,0 +1,16 @@
+state={
+	id=576
+	name="Duron"
+	provinces={
+		239 1532 4870 4942 5547 9439 9584 9628 
+	}
+	manpower=0
+
+	state_category = large_city
+
+	history={
+		add_core_of = ZOH ZOR
+		owner = ZOH
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

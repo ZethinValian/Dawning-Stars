@@ -1,0 +1,11 @@
+
+state={
+	id=589
+	name="Jerzit"
+	provinces={
+		1263 1584 6083 6361 7277 9901 9941 9950 9989 10011 10023 10052 10111 10139 10140 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
