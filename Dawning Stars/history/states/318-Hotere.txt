@@ -1,0 +1,15 @@
+
+state={
+	id=318
+	name="STATE_318"
+	provinces={
+		12 346 3488 11999 12057 
+	}
+	manpower=2934000
+	buildings_max_level_factor=0
+	history = {
+		owner = DEL
+		add_core_of = PHA
+		add_core_of = DEL
+	}
+}

@@ -4,7 +4,12 @@ state={
 	provinces={
 		1948 2738 3188 3199 3575 4334 5800 6757 11003 11156 11238 11260 11345 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower=2799000
+	buildings_max_level_factor=0
+	history = {
+		owner = ZOH
+		add_core_of = ZOH
+		add_core_of = ZOR
+		add_core_of = QUE
+	}
 }

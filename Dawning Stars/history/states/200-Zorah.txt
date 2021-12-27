@@ -1,35 +1,36 @@
+
 state={
 	id=200
 	name="STATE_200"
-
-	provinces={
-		2133 4100 9419 9431 9452 9463 15476 
+	resources={
+		steel=32.000
+		chromium=5.000
+		tungsten=2.000
+		aluminium=4.000
 	}
 
-	manpower = 8692000
-	state_category = megalopolis
-	buildings_max_level_factor = 1
-   
-	resources = {
-		steel = 32
-		chromium = 5
-		tungsten = 2
-		aluminium = 4
-	}
-	
-	history = {
+	history={
 		owner = ZOH
-
 		add_core_of = ZOH
 		add_core_of = ZOR
-		
 		victory_points = {
-			<province id> <points>
+
 		}
-		
 		buildings = {
 			infrastructure = 3
-			}
+			industrial_complex = 3
+			arms_factory = 4
+			dockyard = 1
+
 		}
+
 	}
+
+	provinces={
+		2133 9419 9431 9452 9463 15476 
+	}
+	manpower=8692000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
 }

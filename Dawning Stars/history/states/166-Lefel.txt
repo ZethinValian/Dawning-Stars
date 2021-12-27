@@ -1,0 +1,14 @@
+
+state={
+	id=166
+	name="STATE_166"
+	provinces={
+		987 2885 3484 3994 9751 9817 9828 9906 9965 
+	}
+	manpower=182000
+	buildings_max_level_factor=0
+	history = {
+		owner = DEL
+		add_core_of = DEL
+	}
+}

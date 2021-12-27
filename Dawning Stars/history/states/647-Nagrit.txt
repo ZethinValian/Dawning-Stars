@@ -4,7 +4,10 @@ state={
 	provinces={
 		603 841 2426 4892 4997 7208 11081 11261 11281 11282 11314 11320 11349 11369 11400 11410 11454 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower=625000
+	buildings_max_level_factor=0
+	history = {
+		owner = DEL
+		add_core_of = YEV
+	}
 }

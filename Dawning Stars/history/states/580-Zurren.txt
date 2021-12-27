@@ -1,0 +1,26 @@
+
+state={
+	id=580
+	name="STATE_580"
+	provinces={
+		748 4546 7096 9871 9954 9988 10059 10138 
+	}
+	state_category= metropolis
+	manpower=2342000
+	buildings_max_level_factor=0
+	resources = {
+		steel = 8
+		aluminium = 12
+	}
+	history = {
+		owner = ZOH
+		add_core_of = ZOH
+		add_core_of = ZOR
+		
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 3
+			arms_factory = 6
+		}
+	}
+}

@@ -1,0 +1,15 @@
+state={
+	id=578
+	name="STATE_578"
+	provinces={
+		4109 4769 7191 9732 9799 9890 9902 9976 
+	}
+	manpower=1665000
+	buildings_max_level_factor=0
+	history = {
+		owner = ZOH
+		add_core_of = ZOH
+		add_core_of = ZOR
+		add_core_of = VAL
+	}
+}

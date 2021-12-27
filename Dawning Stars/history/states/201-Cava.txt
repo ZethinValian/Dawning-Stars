@@ -1,0 +1,14 @@
+
+state={
+	id=201
+	name="STATE_201"
+	provinces={
+		6 727 1233 5649 6297 6416 7022 9316 15477 
+	}
+	manpower=3989000
+	buildings_max_level_factor=0
+	history = {
+		owner = DEL
+		add_core_of = DEL
+	}
+}

@@ -1,10 +1,15 @@
 state={
 	id=577
-	name="Lilet"
+	name="STATE_577"
 	provinces={
 		277 1069 2062 3108 9647 9691 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower= 739000
+	buildings_max_level_factor=0
+	history = {
+		owner = ZOH
+		add_core_of = ZOH
+		add_core_of = ZOR
+		add_core_of = VAL
+	}
 }

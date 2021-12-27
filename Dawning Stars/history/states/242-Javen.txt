@@ -1,0 +1,14 @@
+
+state={
+	id=242
+	name="STATE_242"
+	provinces={
+		749 1458 1903 1964 2951 3027 3352 3861 5466 5601 6476 6816 10194 10211 10283 10297 10329 10407 10442 10481 10541 10654 10672 
+	}
+	manpower=3622000
+	buildings_max_level_factor=0
+	history = {
+		owner = DEL
+		add_core_of = YEV
+	}
+}

@@ -3,7 +3,7 @@ This is a WIP (Work in Progress) mod for Hearts of Iron 4. It encompasses the la
 (Alternate Future of Republica) animated countryball series published by Bluez Studios. We are currently in an extremely early stage
 of development.
 
-VERSION: 0.0.7 "The Ideologies Update"
+VERSION: 0.0.8 "The Focus Tree Begins"
 
 Lead Dev: ZeeMan78
 Tech Head: ZTitan7
@@ -12,3 +12,4 @@ Story Head: ZeeMan78
 Developers:
 -ZTitan7
 -Tycho "Korochun"
+-Bad_Player

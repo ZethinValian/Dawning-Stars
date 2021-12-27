@@ -14,6 +14,7 @@
 
 focus_tree = {
 	id = generic_focus
+	continuous_focus_position = { x = 200 y = 1700 }
 	
 	country = {
 		factor = 1
@@ -25,11 +26,1424 @@ focus_tree = {
 	initial_show_position = {
 		focus = the_political_sphere
 	}
+	focus = {
+		id = the_armed_forces
+		icon = 0
+		x = 4
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 25
+			}
+		}
+
+	focus = {
+		id = revise_the_army
+		icon = 0
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_armed_forces }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 0.50
+				uses = 1
+				category = land_doctrine
+				}
+			}
+		}
+
+	focus = {
+		id = update_the_guns
+		icon = 0
+		x = 4
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_armed_forces }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = equipment_bonus
+				bonus = 0.75
+				uses = 2
+				category = infantry_weapons
+				}
+			}
+		}
+
+	focus = {
+		id = prepare_the_troops
+		icon = 0
+		x = 7
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_armed_forces }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 25
+			}
+		}
+
+	focus = {
+		id = reaffirm_doctrines
+		icon = 0
+		x = 1
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = revise_the_army }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 0.50
+				uses = 1
+				category = land_doctrine
+				}
+			}
+		}
+
+	focus = {
+		id = motorize_the_infantry
+		icon = 0
+		x = 3
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = update_the_guns }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = equipment_bonus
+				bonus = 0.50
+				uses = 1
+				category = motorized_equipment
+				}
+			}
+		}
+
+	focus = {
+		id = strengthen_the_line
+		icon = 0
+		x = 5
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = update_the_guns }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = equipment_bonus
+				bonus = 0.50
+				uses = 2
+				category = artillery
+				}
+			}
+		}
+
+	focus = {
+		id = support_the_troops
+		icon = 0
+		x = 4
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = motorize_the_infantry focus = strengthen_the_line }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = equipment_bonus
+				bonus = 1
+				uses = 2
+				category = support_tech
+				}
+			}
+		}
+
+	focus = {
+		id = revise_the_army_2
+		icon = 0
+		x = 1
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = reaffirm_doctrines }
+		prerequisite = { focus = support_the_troops }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 0.50
+				uses = 1
+				category = land_doctrine
+				}
+			}
+		}
+
+	focus = {
+		id = revisit_strategy
+		icon = 0
+		x = 4
+		y = 5
+		cost = 20
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = support_the_troops }
+		prerequisite = { focus = revise_the_army_2 }
+		prerequisite = { focus = professionalism }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 50
+			}
+		}
+
+	focus = {
+		id = the_unyielding_wall
+		icon = 0
+		x = 6
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = revisit_strategy }
+		prerequisite = { focus = strengthen_the_line }
+
+		mutually_exclusive = { focus = the_armored_forces }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = equipment_bonus
+				bonus = 0.50
+				uses = 2
+				category = artillery
+				category = cat_anti_tank
+				category = cat_anti_air
+				}
+			}
+		}
+
+	focus = {
+		id = the_armored_forces
+		icon = 0
+		x = 2
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = revisit_strategy }
+		prerequisite = { focus = motorize_the_infantry }
+
+		mutually_exclusive = { focus = the_unyielding_wall }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = equipment_bonus
+				bonus = 0.50
+				uses = 2
+				category = armor
+				}
+			}
+		}
+
+	focus = {
+		id = the_new_camps
+		icon = 0
+		x = 7
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = prepare_the_troops }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 25
+			}
+		}
+
+	focus = {
+		id = train_the_troops
+		icon = 0
+		x = 7
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_new_camps }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = training_camps
+			}
+		}
+
+	focus = {
+		id = professionalism
+		icon = 0
+		x = 7
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = support_the_troops }
+		prerequisite = { focus = train_the_troops }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 25
+			add_ideas = professionalism
+			}
+		}
+
+	focus = {
+		id = the_special_forces
+		icon = 0
+		x = 7
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = professionalism }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = update_the_guns_2
+		icon = 0
+		x = 4
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = revisit_strategy }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = equipment_bonus
+				bonus = 0.75
+				uses = 2
+				category = infantry_weapons
+				}
+			}
+		}
+
+	focus = {
+		id = support_the_troops_2
+		icon = 0
+		x = 4
+		y = 8
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = update_the_guns_2 }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = equipment_bonus
+				bonus = 0.5
+				uses = 2
+				category = support_tech
+				}
+			}
+		}
+
+	focus = {
+		id = restructure_and_improvement
+		icon = 0
+		x = 4
+		y = 9
+		cost = 15
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = support_the_troops_2 }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 50
+			add_ideas = command_restructure
+			}
+		}
+
+	focus = {
+		id = mechanize_the_infantry
+		icon = 0
+		x = 2
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_armored_forces }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = equipment_bonus
+				bonus = 0.50
+				uses = 1
+				category = cat_mechanized_equipment
+				}
+			}
+		}
+
+	focus = {
+		id = the_armored_forces_2
+		icon = 0
+		x = 2
+		y = 8
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = mechanize_the_infantry }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = equipment_bonus
+				bonus = 0.50
+				uses = 2
+				category = armor
+				}
+			}
+		}
+
+	focus = {
+		id = mass_mobilization
+		icon = 0
+		x = 2
+		y = 9
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_armored_forces_2 }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = mass_mobilization
+			}
+		}
+
+	focus = {
+		id = fortify_the_front
+		icon = 0
+		x = 6
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_unyielding_wall }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = fortify_the_front
+			}
+		}
+
+	focus = {
+		id = the_unyielding_wall_2
+		icon = 0
+		x = 6
+		y = 8
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = fortify_the_front }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = equipment_bonus
+				bonus = 0.50
+				uses = 2
+				category = artillery
+				category = cat_anti_tank
+				category = cat_anti_air
+				}
+			}
+		}
+	focus = {
+		id = the_bastion
+		icon = 0
+		x = 6
+		y = 9
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_unyielding_wall_2 }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = fortify_the_front
+				add_idea = the_bastion
+				}
+			}
+		}
+
+	focus = {
+		id = spirit_of_war
+		icon = 0
+		x = 4
+		y = 10
+		cost = 20
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_bastion focus = mass_mobilization }
+		prerequisite = { focus = restructure_and_improvement }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 50
+			add_ideas = spirit_of_war
+			}
+		}
+
+	focus = {
+		id = the_naval_academy
+		icon = 0
+		x = 11
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = the_naval_doctrine
+		icon = 0
+		x = 9
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_naval_academy }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = destroyer_effort
+		icon = 0
+		x = 11
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_naval_academy }
+
+		mutually_exclusive = { focus = submarine_effort }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = submarine_effort
+		icon = 0
+		x = 13
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_naval_academy }
+
+		mutually_exclusive = { focus = destroyer_effort }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = naval_armaments
+		icon = 0
+		x = 12
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = destroyer_effort focus = submarine_effort }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = expand_dockyard_facilities
+		icon = 0
+		x = 10
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_naval_academy }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = expand_dockyard_facilities_2
+		icon = 0
+		x = 12
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = naval_armaments }
+		prerequisite = { focus = expand_dockyard_facilities }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = the_naval_doctrine_2
+		icon = 0
+		x = 9
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_naval_doctrine }
+		prerequisite = { focus = naval_armaments }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = cruiser_effort
+		icon = 0
+		x = 11
+		y = 4
+		cost = 10 
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = naval_armaments }
+		prerequisite = { focus = the_naval_doctrine_2 }
+
+		mutually_exclusive = { focus = battleship_effort }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = battleship_effort
+		icon = 0
+		x = 13
+		y = 4
+		cost = 10 
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = naval_armaments }
+		prerequisite = { focus = the_naval_doctrine_2 }
+
+		mutually_exclusive = { focus = cruiser_effort }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = the_naval_doctrine_3
+		icon = 0
+		x = 9
+		y = 5
+		cost = 10 
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = professionalism }
+		prerequisite = { focus = the_naval_doctrine_2 }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = naval_armaments_2
+		icon = 0
+		x = 12
+		y = 5
+		cost = 10 
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = battleship_effort focus = cruiser_effort }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = navy_elite
+		icon = 0
+		x = 11
+		y = 6
+		cost = 10 
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = naval_armaments_2 }
+		prerequisite = { focus = the_naval_doctrine_3 }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = spirit_of_the_sea
+		icon = 0
+		x = 11
+		y = 7
+		cost = 20
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = navy_elite }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = enable_the_armada
+		icon = 0
+		x = 9
+		y = 8
+		cost = 20
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = spirit_of_the_sea }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = the_air_corps
+		icon = 0
+		x = 17
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = the_air_doctrine
+		icon = 0
+		x = 15
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_air_corps }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = fighter_focus
+		icon = 0
+		x = 17
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_air_corps }
+
+		mutually_exclusive = { focus = bomber_focus }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = bomber_focus
+		icon = 0
+		x = 19
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_air_corps }
+
+		mutually_exclusive = { focus = fighter_focus }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = design_improvements
+		icon = 0
+		x = 18
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = fighter_focus focus = bomber_focus}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = the_air_doctrine_2
+		icon = 0
+		x = 16
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = design_improvements }
+		prerequisite = { focus = the_air_doctrine }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = fighter_focus_2
+		icon = 0
+		x = 17
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = design_improvements }
+		prerequisite = { focus = the_air_doctrine_2 }
+		prerequisite = { focus = fighter_focus }
+
+		mutually_exclusive = { focus = cas_focus }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = cas_focus
+		icon = 0
+		x = 19
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = design_improvements }
+		prerequisite = { focus = the_air_doctrine_2 }
+
+		mutually_exclusive = { focus = figher_focus_2 }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = naval_bomber_focus
+		icon = 0
+		x = 14
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_air_doctrine }
+		prerequisite = { focus = naval_armaments }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = design_improvements_2
+		icon = 0
+		x = 18
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = cas_focus focus = fighter_focus_2 }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = airforce_elite
+		icon = 0
+		x = 16
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_air_doctrine_2 }
+		prerequisite = { focus = design_improvements_2 }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = carrier_effort
+		icon = 0
+		x = 14
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = naval_armaments_2 }
+		prerequisite = { focus = naval_bomber_focus }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = spirit_of_the_sky
+		icon = 0
+		x = 16
+		y = 7
+		cost = 20
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = airforce_elite }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = industrial_effort
+		icon = 0
+		x = 23
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = industrial_effort_2
+		icon = 0
+		x = 21
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = industrial_effort }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = arms_effort
+		icon = 0
+		x = 25
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = industrial_effort }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = fund_new_roads
+		icon = 0
+		x = 21
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = industrial_effort_2 }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = arms_effort_2
+		icon = 0
+		x = 25
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = arms_effort }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = synthetic_manufacturing
+		icon = 0
+		x = 23
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = industrial_effort }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = industrial_boom
+		icon = 0
+		x = 23
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = arms_effort_2 }
+		prerequisite = { focus = fund_new_roads }
+		prerequisite = { focus = synthetic_manufacturing }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = industrial_effort_3
+		icon = 0
+		x = 21
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = industrial_boom }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = fund_new_roads_2
+		icon = 0
+		x = 21
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = industrial_effort_3 }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = arms_effort_3
+		icon = 0
+		x = 25
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = industrial_boom }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = arms_effort_4
+		icon = 0
+		x = 25
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = arms_effort_3 }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = oil_refining
+		icon = 0
+		x = 23
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = industrial_boom }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = found_a_rubber_plant
+		icon = 0
+		x = 23
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = oil_refining }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = industrial_effort_4
+		icon = 0
+		x = 23
+		y = 6
+		cost = 20
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = fund_new_roads_2 }
+		prerequisite = { focus = found_a_rubber_plant }
+		prerequisite = { focus = arms_effort_4 }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = scientific_surge
+		icon = 0
+		x = 23
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = industrial_effort_4 }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = science_haven
+		icon = 0
+		x = 23
+		y = 8
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = scientific_surge }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = electronics_effort
+		icon = 0
+		x = 21
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = fund_new_roads_2 }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = advanced_processing
+		icon = 0
+		x = 21
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = industrial_effort_4 }
+		prerequisite = { focus = electronics_effort }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = rocket_theory
+		icon = 0
+		x = 19
+		y = 8
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = scientific_surge }
+		prerequisite = { focus = design_improvements_2 }
+		prerequisite = { focus = advanced_processing }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = advanced_rocketry
+		icon = 0
+		x = 19
+		y = 9
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = rocket_theory }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = hellfire
+		icon = 0
+		x = 18
+		y = 10
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = advanced_rocketry }
+		prerequisite = { focus = spirit_of_the_sky }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = elitism
+		icon = 0
+		x = 11
+		y = 11
+		cost = 20
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = spirit_of_the_sea }
+		prerequisite = { focus = spirit_of_the_sky }
+		prerequisite = { focus = spirit_of_war }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
 
 	focus = {
 		id = the_political_sphere
 		icon = GFX_goal_generic_demand_territory
-		x = 5
+		x = 35
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -44,7 +1458,50 @@ focus_tree = {
 	focus = {
 		id = liberty_ethos
 		icon = GFX_goal_generic_demand_territory
-		x = 2
+		x = 30
+		y = 2
+		
+		cost = 8
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = the_political_sphere }
+		
+		mutually_exclusive = {
+		focus = power_and_might
+			}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			}
+		}
+	
+	focus = {
+		id = the_social_front
+		icon = 0
+		x = 35
+		y = 1
+		
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = the_political_sphere }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = { 
+			idea = the_social_sphere
+			days = 1095
+				}
+
+			}
+		}
+
+		focus = {
+		id = power_and_might
+		icon = 0
+		x = 44
 		y = 2
 		
 		cost = 8
@@ -52,10 +1509,889 @@ focus_tree = {
 		prerequisite = { focus = the_political_sphere }
 		
 		available_if_capitulated = yes
+		mutually_exclusive = {
+		focus = liberty_ethos
+			}
+		completion_reward = {
+				add_war_support = 5
+				add_political_power = 50
+				}
+
+			}
+
+		focus = {
+		id = the_democratic_front
+		icon = 0
+		x = 28
+		y = 3
+		
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = liberty_ethos }
+		
+		available_if_capitulated = yes
+		mutually_exclusive = {
+			focus = the_free_front
+			focus = the_social_center
+			focus = a_communist_state
+			focus = a_strong_throne
+			focus = a_military_regime
+			focus = strength_and_glory
+			}
+		completion_reward = {
+			add_timed_idea = { 
+			idea = democracy_rising
+			days = 1095
+				}
+			}	
+		}
+
+		focus = {
+		id = the_free_front
+		icon = 0
+		x = 32
+		y = 3
+		
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = liberty_ethos }
+		prerequisite = { focus = the_social_front }
+		
+		available_if_capitulated = yes
+		mutually_exclusive = {
+			focus = the_democratic_front
+			focus = the_social_center
+			focus = a_communist_state
+			focus = a_strong_throne
+			focus = a_military_regime
+			focus = strength_and_glory
+			}
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = the_social_center
+		icon = 0
+		x = 34
+		y = 3
+		
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = liberty_ethos focus = power_and_might}
+		prerequisite = { focus = the_social_front }
+		
+		available_if_capitulated = yes
+		mutually_exclusive = {
+			focus = the_free_front
+			focus = the_democratic_front
+			focus = a_communist_state
+			focus = a_strong_throne
+			focus = a_military_regime
+			focus = strength_and_glory
+			}
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = a_communist_state
+		icon = 0
+		x = 38
+		y = 3
+		
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = power_and_might}
+		prerequisite = { focus = the_social_front }
+		
+		available_if_capitulated = yes
+		mutually_exclusive = {
+			focus = the_free_front
+			focus = the_social_center
+			focus = the_democratic_front
+			focus = a_strong_throne
+			focus = a_military_regime
+			focus = strength_and_glory
+			}
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = a_strong_throne
+		icon = 0
+		x = 41
+		y = 3
+		
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = power_and_might }
+		
+		available_if_capitulated = yes
+		mutually_exclusive = {
+			focus = the_free_front
+			focus = the_social_center
+			focus = a_communist_state
+			focus = the_democratic_front
+			focus = a_military_regime
+			focus = strength_and_glory
+			}
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = a_military_regime
+		icon = 0
+		x = 44
+		y = 3
+		
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = power_and_might }
+		
+		available_if_capitulated = yes
+		mutually_exclusive = {
+			focus = the_free_front
+			focus = the_social_center
+			focus = a_communist_state
+			focus = a_strong_throne
+			focus = the_democratic_front
+			focus = strength_and_glory
+			}
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = strength_and_glory
+		icon = 0
+		x = 48
+		y = 3
+		
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = power_and_might }
+		
+		available_if_capitulated = yes
+		mutually_exclusive = {
+			focus = the_free_front
+			focus = the_social_center
+			focus = a_communist_state
+			focus = a_strong_throne
+			focus = a_military_regime
+			focus = the_democratic_front
+			}
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = democratic_ideals
+		icon = 0
+		x = 28
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_democratic_front }
+		
+		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 50
+			
+			}
+		}
+
+	focus = {
+		id = libertarian_policy
+		icon = 0
+		x = 28
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = democratic_ideals }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = for_the_people
+		icon = 0
+		x = 30
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_democratic_front focus = the_free_front }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+	focus = {
+		id = united_we_stand
+		icon = 0
+		x = 30
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = for_the_people }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = socialism_united
+		icon = 0
+		x = 32
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_free_front }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = socialize_the_nation
+		icon = 0
+		x = 32
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = socialism_united }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = global_liberty
+		icon = 0
+		x = 30
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = libertarian_policy focus = socialize_the_nation }
+		prerequisite = { focus = united_we_stand }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = propogate_socialist_ideals
+		icon = 0
+		x = 34
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_social_center }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = unify_the_economy
+		icon = 0
+		x = 34
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = propogate_socialist_ideals }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = radicalize_the_people
+		icon = 0
+		x = 38
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = a_communist_state }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = the_true_path
+		icon = 0
+		x = 38
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = radicalize_the_people }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = leftist_authoritarianism
+		icon = 0
+		x = 36
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_social_center focus = a_communist_state}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = leftist_stoicism
+		icon = 0
+		x = 36
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = unify_the_economy focus = the_true_path}
+		prerequisite = { focus = leftist_authoritarianism }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = right_to_rule
+		icon = 0
+		x = 41
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = a_strong_throne }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = republican_rule
+		icon = 0
+		x = 40
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = right_to_rule }
+
+		mutually_exclusive = { focus = consolidate_power }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = consolidate_power
+		icon = 0
+		x = 42
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = right_to_rule }
+
+		mutually_exclusive = { focus = republican_rule }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = industrial_control
+		icon = 0
+		x = 42
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = consolidate_power }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = stratified_economy
+		icon = 0
+		x = 40
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = republican_rule }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = monarchist_sentiment
+		icon = 0
+		x = 40
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = stratified_economy focus = industrial_control }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = nationalism
+		icon = 0
+		x = 42
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = stratified_economy focus = industrial_control }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = coup_the_government
+		icon = 0
+		x = 44
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = a_military_regime }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = promote_the_right
+		icon = 0
+		x = 48
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = strength_and_glory }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = raise_military_support
+		icon = 0
+		x = 46
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = strength_and_glory focus = a_military_regime}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = militarize
+		icon = 0
+		x = 44
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = coup_the_government }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = subjugate_the_people
+		icon = 0
+		x = 44
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = militarize }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = sieze_the_economy
+		icon = 0
+		x = 46
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = militarize focus = sieze_control }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = sieze_control
+		icon = 0
+		x = 48
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = promote_the_right }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = raise_national_pride
+		icon = 0
+		x = 48
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = sieze_control }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = a_unified_people
+		icon = 0
+		x = 48
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = raise_national_pride }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = dissolve_the_factions
+		icon = 0
+		x = 44
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = subjugate_the_people }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = raise_conscription
+		icon = 0
+		x = 46
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = sieze_the_economy }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = techological_assistance
+		icon = 0
+		x = 33
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = global_liberty focus = leftist_stoicism }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = techological_assistance_bloc
+		icon = 0
+		x = 44
+		y = 8
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = nationalism focus = dissolve_the_factions focus = a_unified_people}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = a_capitalist_society
+		icon = 0
+		x = 28
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = libertarian_policy }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = socialize_the_economy
+		icon = 0
+		x = 32
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = socialize_the_nation }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = raise_the_unions
+		icon = 0
+		x = 34
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = unify_the_economy }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = the_national_union
+		icon = 0
+		x = 38
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = the_true_path }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = democratic_unity
+		icon = 0
+		x = 30
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = a_capitalist_society focus = socialize_the_economy }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = the_left_united
+		icon = 0
+		x = 36
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = raise_the_unions focus = the_national_union }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = ideological_fanticism
+		icon = 0
+		x = 46
+		y = 8
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = a_unified_people focus = dissolve_the_factions}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = dynastic_relations
+		icon = 0
+		x = 42
+		y = 8
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+
+		prerequisite = { focus = nationalism }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
 			}
 		}
 	}

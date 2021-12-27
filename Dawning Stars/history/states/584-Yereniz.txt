@@ -1,10 +1,15 @@
+
 state={
 	id=584
-	name="Yereniz"
+	name="STATE_584"
 	provinces={
-		342 875 967 3525 9500 9582 9583 9670 9768 
+		342 875 967 3525 4100 9500 9582 9583 9670 9768 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower=3237000
+	buildings_max_level_factor=0
+	history = {
+		owner = ZOH
+		add_core_of = ZOH
+		add_core_of = ZOR
+	}
 }

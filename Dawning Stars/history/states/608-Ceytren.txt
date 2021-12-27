@@ -1,10 +1,15 @@
 state={
 	id=608
-	name="Ceytren"
+	name="STATE_608"
 	provinces={
 		2675 3186 10271 10359 10370 10453 10480 10636 10653 10721 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower=1112000
+	buildings_max_level_factor=0
+	history = {
+		owner = ZOH
+		add_core_of = ZOH
+		add_core_of = ZOR
+		add_core_of = WJU
+	}
 }

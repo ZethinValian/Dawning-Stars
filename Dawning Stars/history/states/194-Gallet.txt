@@ -1,10 +1,15 @@
 state={
 	id=194
-	name="Gallet"
+	name="STATE_194"
 	provinces={
 		2404 3881 5815 10855 10925 10960 10994 11024 11049 11116 11175 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower=175000
+	buildings_max_level_factor=0
+	history = {
+		owner = ZOH
+		add_core_of = ZOH
+		add_core_of = ZOR
+		add_core_of = GUR
+	}
 }

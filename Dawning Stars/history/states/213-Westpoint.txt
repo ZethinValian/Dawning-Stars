@@ -1,0 +1,14 @@
+
+state={
+	id=213
+	name="STATE_213"
+	provinces={
+		913 4758 6400 7176 10026 10066 10067 10115 10184 10240 10348 
+	}
+	manpower=829000
+	buildings_max_level_factor=0
+	history = {
+		owner = DEL
+		add_core_of = DEL
+	}
+}

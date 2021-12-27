@@ -1,0 +1,143 @@
+ideas = {
+	country = {
+	
+		the_social_sphere = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				democratic_socialism_drift = 0.1
+				state_socialism_drift = 0.1
+				communism_drift = 0.1
+			}
+		}
+		democracy_rising = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+		training_camps = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				training_time_factor = -0.25
+			}
+		}
+		professionalism = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				recruitable_population_factor = 0.02
+				resistance_damage_to_garrison = -0.3
+			}
+		}
+		fortify_the_front = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				production_speed_bunker_factor = 0.25
+			}
+		}
+		the_bastion = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				production_speed_bunker_factor = 0.3
+				max_dig_in_factor = 0.2
+			}
+		}
+		mass_mobilization = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				cat_mechanized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		command_restructure = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				max_command_power = 25
+			}
+		}
+		spirit_of_war = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				command_power_gain = 0.25
+				land_reinforce_rate = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+	}
+}

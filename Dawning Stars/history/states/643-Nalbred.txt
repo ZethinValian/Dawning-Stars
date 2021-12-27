@@ -4,7 +4,10 @@ state={
 	provinces={
 		979 1102 2070 2366 2469 3622 4152 5644 11466 11529 11639 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower=1772000
+	buildings_max_level_factor=0
+	history = {
+		owner = DEL
+		add_core_of = ACT
+	}
 }

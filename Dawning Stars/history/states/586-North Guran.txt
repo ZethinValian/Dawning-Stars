@@ -1,10 +1,15 @@
 state={
 	id=586
-	name="North Guran"
+	name="STATE_586"
 	provinces={
 		772 1919 3894 11346 11347 11419 11420 11421 11429 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower=3302000
+	buildings_max_level_factor=0
+	history = {
+		owner = ZOH
+		add_core_of = ZOH
+		add_core_of = ZOR
+		add_core_of = GUR
+	}
 }

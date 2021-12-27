@@ -1,0 +1,15 @@
+state={
+	id=595
+	name="STATE_595"
+	provinces={
+		3741 4705 5402 10975 11002 11016 11048 11103 11173 
+	}
+	manpower=5737000
+	buildings_max_level_factor=0
+	history = {
+		owner = ZOH
+		add_core_of = ZOH
+		add_core_of = ZOR
+		add_core_of = QUE
+	}
+}

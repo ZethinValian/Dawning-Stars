@@ -1,11 +1,16 @@
 
 state={
 	id=589
-	name="Jerzit"
+	name="STATE_589"
 	provinces={
 		1263 1584 6083 6361 7277 9901 9941 9950 9989 10011 10023 10052 10111 10139 10140 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower=623000
+	buildings_max_level_factor=0
+	history = {
+		owner = ZOH
+		add_core_of = ZOH
+		add_core_of = ZOR
+		add_core_of = WJU
+	}
 }

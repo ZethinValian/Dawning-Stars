@@ -5,7 +5,11 @@ state={
 	provinces={
 		1188 1517 2962 4472 6514 6785 6991 7394 9464 9465 9525 9544 9585 9586 9606 9632 9633 9634 9658 9671 9697 9707 9750 9789 9826 9838 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower=2735000
+	buildings_max_level_factor=0
+	history = {
+		owner = DEL
+		add_core_of = CES
+		add_core_of = DEL
+	}
 }

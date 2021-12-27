@@ -1,11 +1,16 @@
 
 state={
 	id=590
-	name="Ryanen"
+	name="STATE_590"
 	provinces={
 		3178 4447 4681 10078 10090 10181 10193 10220 10256 10257 10270 10282 10345 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower=1961000
+	buildings_max_level_factor=0
+	history = {
+		owner = ZOH
+		add_core_of = ZOH
+		add_core_of = ZOR
+		add_core_of = WJU
+	}
 }
