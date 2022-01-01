@@ -1,4 +1,104 @@
 ideas = {
+
+	hidden_ideas = {
+
+		continuous_naval_production = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+			}
+		}
+
+
+		continuous_air_production = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				jet_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				rocket_interceptor_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				jet_tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				jet_strat_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				heavy_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				strat_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				transport_plane_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				guided_missile_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				scout_plane_equipment = {
+					instant = yes
+					build_cost_ic = -0.10	
+				}
+			}		
+		}
+	}
+
 	country = {
 	
 		the_social_sphere = {
@@ -137,6 +237,586 @@ ideas = {
 				land_reinforce_rate = 0.1
 				army_attack_factor = 0.1
 				army_defence_factor = 0.1
+			}
+		}
+		special_forces = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				special_forces_cap = 0.02
+			}
+		}
+		naval_elite = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				max_command_power = 25
+			}
+		}
+		spirit_of_the_sea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				critical_receive_chance = -0.1
+				experience_gain_navy_factor = 0.15
+				naval_accidents_chance = -0.1
+				naval_damage_factor = 0.1
+
+			}
+		}
+		armada_scale_dockyards = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		airforce_elite = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				air_ace_generation_chance_factor = 0.1
+			}
+		}
+		spirit_of_the_sky = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				air_accidents_factor = -0.1
+				air_agility_factor = 0.1
+				air_attack_factor = 0.1
+				air_mission_xp_gain_factor = 0.1
+
+			}
+		}
+		elitism = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				offence = 0.1
+				defence = 0.1
+				experience_loss_factor = -0.1
+			}
+		}
+		hellfire = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				rocket_attack_factor = 0.1
+				production_speed_rocket_site_factor = 0.1
+			}
+		}
+		industrial_boom = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		free_socialism_on_the_rise = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				democratic_socialism_drift = 0.1
+			}
+		}
+		socialism_rising = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				state_socialism_drift = 0.1
+			}
+		}
+		communist_popularity = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+		monarchist_sentiment = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				monarchism_drift = 0.1
+			}
+		}
+		distrust_in_politicians = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				militarism_drift = 0.1
+			}
+		}
+		glorification_of_the_state = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				authoritarianism_drift = 0.1
+			}
+		}
+		democratic_ideals = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				democratic_drift = 0.2
+			}
+		}
+		libertarian_policy = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				trade_opinion_factor = 0.5
+			}
+		}
+		united_we_stand = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				political_power_gain = 0.25
+			}
+		}
+		socialist_unity = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				democratic_socialism_drift = 0.2
+			}
+		}
+		national_socialism = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				democratic_socialism_drift = 0.02
+			}
+		}
+		global_liberty = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				send_volunteer_factor = 0.50
+			}
+		}
+		capitalism = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		socialism = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		socialist_ideals = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				state_socialism_drift = 0.2
+			}
+		}
+		radicalization = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				communism_drift = 0.2
+			}
+		}
+		collectivism = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.05
+			}
+		}
+		the_grip = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+		the_grip2 = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				conscription_factor = 0.1
+				send_volunteer_factor = 0.25
+				army_core_defence_factor = 0.1
+
+			}
+		}
+		the_union = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		the_national_union = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.04
+				production_factory_max_efficiency_factor = 0.04
+				army_core_attack_factor = 0.1
+			}
+		}
+		the_right_to_rule = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				monarchism_drift = 0.02
+			}
+		}
+		industrial_control = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		stratified_economy = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		nationalism = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				conscription_factor = 0.05
+				drift_defence_factor = 0.5
+			}
+		}
+		right_wing_propaganda = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				authoritarianism_drift = 0.1
+			}
+		}
+		militias = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				conscription = 0.015
+			}
+		}
+		political_unification_auth = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				democratic_drift = -0.01
+				democratic_socialism_drift = -0.01
+				state_socialism_drift = -0.01
+				communism_drift = -0.01
+				monarchism_drift = -0.01
+				authoritarianism_drift = 0.05
+			}
+		}
+		political_unification_mil = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				democratic_drift = -0.01
+				democratic_socialism_drift = -0.01
+				state_socialism_drift = -0.01
+				communism_drift = -0.01
+				monarchism_drift = -0.01
+				militarism_drift = 0.05
+			}
+		}
+		raised_conscription = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 0
+
+			modifier = {
+				conscription = 0.02
 			}
 		}
 	}
