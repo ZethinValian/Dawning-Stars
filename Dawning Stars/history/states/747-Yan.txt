@@ -1,10 +1,20 @@
+
 state={
 	id=747
 	name="STATE_747"
+
+	history={
+		owner = YEN
+		add_core_of = YEN
+		add_core_of = YON
+		add_core_of = GOT
+
+	}
+
 	provinces={
 		1939 1958 3368 5493 5903 12134 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
+	manpower=1565000
+	buildings_max_level_factor=0.000
 	local_supplies=0.000
 }

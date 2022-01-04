@@ -1,0 +1,19 @@
+
+state={
+	id=415
+	name="STATE_415"
+
+	history={
+		owner = SAR
+		add_core_of = SAR
+		add_core_of = EST
+
+	}
+
+	provinces={
+		2016 2458 2761 3029 6264 6515 6942 7060 12716 12717 12778 12806 12834 12850 12859 12888 15597 
+	}
+	manpower=1121000
+	buildings_max_level_factor=0.000
+	local_supplies=0.000
+}

@@ -4,7 +4,11 @@ state={
 	provinces={
 		1082 3171 4266 5127 6062 7329 7401 13127 13148 13176 13233 13266 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower= 124000
+	buildings_max_level_factor=0
+	history = {
+		owner = YEN
+		add_core_of = YEN
+		add_core_of = YNE
+	}
 }

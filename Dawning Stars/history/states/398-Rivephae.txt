@@ -1,0 +1,15 @@
+
+state={
+	id=398
+	name="STATE_398"
+	provinces={
+		1370 2635 3883 6060 12880 12904 12911 12942 12955 12969 12998 
+	}
+	manpower= 4532000
+	buildings_max_level_factor=0
+	history = {
+		owner = SAR
+		add_core_of = SAR
+		add_core_of = EST
+	}
+}

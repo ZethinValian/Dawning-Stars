@@ -10,7 +10,7 @@ state={
 	resources = {
 		steel = 40
 		aluminium = 8
-		tungesten = 16
+		tungsten = 16
 	}	
 	history = {
 		owner = ZOH

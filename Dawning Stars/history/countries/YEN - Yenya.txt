@@ -1,0 +1,35 @@
+capital = 752
+
+# Starting tech
+set_technology = {
+	
+}
+
+set_convoys = 1
+
+set_politics = {
+	ruling_party = monarchism
+	last_election = "2000.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 5
+	democratic_socialism = 2
+	state_socialism = 1
+	communism = 4
+	monarchism = 79
+	militarism = 8
+	authoritarianism = 1
+}
+
+create_country_leader = {
+	name = "Yolen Dryzel III"
+	desc = ""
+	picture = ""
+	ideology = oligarchist
+	traits = {
+		#
+	}
+}

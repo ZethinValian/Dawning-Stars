@@ -3,7 +3,7 @@ This is a WIP (Work in Progress) mod for Hearts of Iron 4. It encompasses the la
 (Alternate Future of Republica) animated countryball series published by Bluez Studios. We are currently in an extremely early stage
 of development.
 
-VERSION: 0.0.9 "We Have A Tree Now"
+VERSION: 0.0.12 "Hey look the year changed"
 
 Lead Dev: ZeeMan78
 Tech Head: ZTitan7

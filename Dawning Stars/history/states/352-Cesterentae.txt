@@ -1,0 +1,15 @@
+
+state={
+	id=352
+	name="STATE_352"
+	provinces={
+		848 2103 5473 6661 7111 12928 12985 15590 15591 
+	}
+	manpower=2523000 
+	buildings_max_level_factor=0
+	history = {
+		owner = SAR
+		add_core_of = SAR
+		add_core_of = EST
+	}
+}

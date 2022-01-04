@@ -1,0 +1,50 @@
+bookmarks = {
+	bookmark = {
+		name = "DAWNING_STARS_NAME"
+		desc = "DAWNING_STARS_DESC"
+		date = 2000.1.1.12
+		picture = "GFX_dawning_stars_bookmark"
+		default_country = "DEL"
+		default = yes
+	
+		DEL = {
+			history = DEL_DAWNING_STARS_DESC
+			ideology = authoritarianism
+			ideas={
+			}
+			focuses = {
+			}
+		}
+		
+		ZOH = {
+			history = ZOH_DAWNING_STARS_DESC
+			ideology = democratic
+			ideas={
+			}
+			focuses = {
+			}
+		}
+		
+		"---"={
+			history = "OTHER_DAWNING_STARS_DESC"
+		}
+
+		# minors from DLC ####
+		"POL"={
+			minor = yes
+			history = "POL_DAWNING_STARS_DESC"
+			ideology = monarchism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

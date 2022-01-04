@@ -5,7 +5,11 @@ state={
 	provinces={
 		2392 2451 2928 4975 5490 6380 6973 12926 12941 12981 13015 13043 13046 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower= 1723000
+	buildings_max_level_factor=0
+	history = {
+		owner = SAR
+		add_core_of = SAR
+		add_core_of = EST
+	}
 }

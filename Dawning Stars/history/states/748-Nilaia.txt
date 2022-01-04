@@ -1,10 +1,19 @@
+
 state={
 	id=748
 	name="STATE_748"
-	provinces={
-		532 1887 2528 2736 5621 6847 12281 12355 12436 12446 12503 12508 
+
+	history={
+		owner = YEN
+		add_core_of = YEN
+		add_core_of = YON
+
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
+
+	provinces={
+		532 1887 2528 2736 5621 6847 12281 12355 12436 12446 12503 12508 15478 
+	}
+	manpower=1547000
+	buildings_max_level_factor=0.000
 	local_supplies=0.000
 }

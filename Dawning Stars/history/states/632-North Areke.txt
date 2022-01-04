@@ -1,13 +1,18 @@
+
 state={
 	id=632
 	name="STATE_632"
-	provinces={
-		1136 1516 3849 5581 12564 12607 
-	}
-	manpower=176000
-	buildings_max_level_factor=0
-	history = {
+
+	history={
 		owner = DEL
 		add_core_of = BAG
+
 	}
+
+	provinces={
+		1136 1516 3849 5581 12564 12607 15594 
+	}
+	manpower=176000
+	buildings_max_level_factor=0.000
+	local_supplies=0.000
 }
