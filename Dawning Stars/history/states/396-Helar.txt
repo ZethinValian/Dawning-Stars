@@ -4,6 +4,11 @@ state={
 	provinces={
 		6201 7303 13637 13672 13681 13686 13717 13760 13790 13812 13813 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
+	manpower= 2187000
+	buildings_max_level_factor=0
+	history = {
+		owner = ISU
+		add_core_of = ISU
+		add_core_of = SOU
+	}
 }

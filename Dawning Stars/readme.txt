@@ -6,7 +6,7 @@ of development.
 VERSION: 0.0.12 "Hey look the year changed"
 
 Lead Dev: ZeeMan78
-Tech Head: Titan
+Tech Head: ZTitan7
 GFX Head: ZeeMan78
 Story Head: ZeeMan78
 Developers:

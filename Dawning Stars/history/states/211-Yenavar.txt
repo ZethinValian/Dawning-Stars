@@ -1,0 +1,15 @@
+
+state={
+	id=211
+	name="STATE_211"
+	provinces={
+		461 990 3592 6214 9219 
+	}
+	manpower= 1722000
+	buildings_max_level_factor=0
+	history = {
+		owner = ISU
+		add_core_of = ISU
+		add_core_of = YUS
+	}
+}

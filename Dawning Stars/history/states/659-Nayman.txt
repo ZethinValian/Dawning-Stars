@@ -1,13 +1,18 @@
+
 state={
 	id=659
 	name="STATE_659"
-	provinces={
-		253 1497 3613 4255 4446 6889 7183 9240 9243 9250 
-	}
-	manpower=692000
-	buildings_max_level_factor=0
-	history = {
+
+	history={
 		owner = DEL
 		add_core_of = DEL
+
 	}
+
+	provinces={
+		253 1497 3613 4255 4446 5649 6889 7183 9240 9243 9250 19528 19529 19533 19534 
+	}
+	manpower=692000
+	buildings_max_level_factor=0.000
+	local_supplies=0.000
 }

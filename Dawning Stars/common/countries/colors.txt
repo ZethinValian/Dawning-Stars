@@ -19,3 +19,33 @@ SAR = {
 	color = rgb { 216 0 140 }
 	color_ui = rgb { 216 0 140 }
 }
+
+YEN = {
+	color = rgb { 132  136  255 }
+	color_ui = rgb { 132  136  255 }
+}
+
+YON = {
+	color = rgb { 79 81 255 }
+	color_ui = rgb { 79 81 255 }
+}
+
+YNE = {
+	color = rgb { 103 127 137 }
+	color_ui = rgb { 103 127 137 }
+}
+
+ZIN = {
+	color = rgb { 81 30 37 }
+	color_ui = rgb { 81 30 37 }
+}
+
+ELK = {
+	color = rgb { 130 87 44 }
+	color_ui = rgb { 130 87 44 }
+}
+
+ISU = {
+	color = rgb { 13 131 216 }
+	color_ui = rgb { 13 131 216 }
+}

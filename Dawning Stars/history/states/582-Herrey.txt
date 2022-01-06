@@ -1,14 +1,19 @@
+
 state={
 	id=582
 	name="STATE_582"
-	provinces={
-		2860 4024 4086 4656 6184 10051 
-	}
-	manpower=3332000
-	buildings_max_level_factor=0
-	history = {
+
+	history={
 		owner = ZOH
 		add_core_of = ZOH
 		add_core_of = ZOR
+
 	}
+
+	provinces={
+		2860 4024 4086 4656 6184 10051 19479 19480 
+	}
+	manpower=3332000
+	buildings_max_level_factor=0.000
+	local_supplies=0.000
 }

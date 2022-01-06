@@ -1,0 +1,35 @@
+capital = 384
+
+# Starting tech
+set_technology = {
+	
+}
+
+set_convoys = 1
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1996.4.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 97
+	democratic_socialism = 1.4
+	state_socialism = 0.2
+	communism = 0
+	monarchism = 0
+	militarism = 0.1
+	authoritarianism = 1.3
+}
+
+create_country_leader = {
+	name = "Oli Ryzel"
+	desc = ""
+	picture = ""
+	ideology = liberal
+	traits = {
+		#
+	}
+}

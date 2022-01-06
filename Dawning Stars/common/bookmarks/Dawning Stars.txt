@@ -16,8 +16,26 @@ bookmarks = {
 			}
 		}
 		
+		ISU = {
+			history = ISU_DAWNING_STARS_DESC
+			ideology = democratic
+			ideas={
+			}
+			focuses = {
+			}
+		}
+		
 		ZOH = {
 			history = ZOH_DAWNING_STARS_DESC
+			ideology = democratic
+			ideas={
+			}
+			focuses = {
+			}
+		}
+		
+		FRE = {
+			history = FRE_DAWNING_STARS_DESC
 			ideology = democratic
 			ideas={
 			}

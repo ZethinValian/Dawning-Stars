@@ -1,0 +1,35 @@
+capital = 683
+
+# Starting tech
+set_technology = {
+	
+}
+
+set_convoys = 1
+
+set_politics = {
+	ruling_party = monarchism
+	last_election = "2000.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 10
+	democratic_socialism = 10
+	state_socialism = 10
+	communism = 10
+	monarchism = 40
+	militarism = 10
+	authoritarianism = 10
+}
+
+create_country_leader = {
+	name = ""
+	desc = ""
+	picture = ""
+	ideology = oligarchist
+	traits = {
+		#
+	}
+}

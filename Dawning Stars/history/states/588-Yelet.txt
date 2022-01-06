@@ -1,15 +1,20 @@
+
 state={
 	id=588
 	name="Yelet"
-	provinces={
-		796 6899 9595 9629 9645 9646 9689 9690 9695 9706 9740 9763 9769 9776 9788 9798 9825 9837 9859 9881 
-	}
-	manpower=611000
-	buildings_max_level_factor=0
-	history = {
+
+	history={
 		owner = ZOH
 		add_core_of = ZOH
 		add_core_of = ZOR
 		add_core_of = VAL
+
 	}
+
+	provinces={
+		796 6899 9595 9629 9645 9646 9689 9690 9695 9706 9740 9763 9769 9776 9788 9798 9825 9837 9859 9881 19481 19482 
+	}
+	manpower=611000
+	buildings_max_level_factor=0.000
+	local_supplies=0.000
 }

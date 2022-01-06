@@ -1,0 +1,14 @@
+state={
+	id=615
+	name="STATE_615"
+	provinces={
+		2629 
+	}
+	manpower= 4392000
+	buildings_max_level_factor=0
+	history = {
+		owner = ISU
+		add_core_of = ISU
+		add_core_of = ZEC
+	}
+}

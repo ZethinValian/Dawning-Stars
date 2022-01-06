@@ -4,7 +4,10 @@ state={
 	provinces={
 		3034 3149 7273 9939 10010 10293 10344 10432 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower= 263000
+	buildings_max_level_factor=0
+	history = {
+		owner = ZIN
+		add_core_of = ZIN
+	}
 }

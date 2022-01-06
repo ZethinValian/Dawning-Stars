@@ -2,13 +2,17 @@
 state={
 	id=59
 	name="STATE_59"
-	provinces={
-		1178 1286 4995 5573 5963 6363 9519 9564 9565 9630 9631 9656 9696 
-	}
-	manpower=1623000
-	buildings_max_level_factor=0
-	history = {
+
+	history={
 		owner = DEL
 		add_core_of = CES
+
 	}
+
+	provinces={
+		1178 1286 4995 5573 5963 6363 9519 9564 9565 9630 9631 9656 9696 19496 19499 
+	}
+	manpower=1623000
+	buildings_max_level_factor=0.000
+	local_supplies=0.000
 }

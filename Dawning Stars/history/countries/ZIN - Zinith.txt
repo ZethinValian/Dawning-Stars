@@ -1,0 +1,35 @@
+capital = 688
+
+# Starting tech
+set_technology = {
+	
+}
+
+set_convoys = 1
+
+set_politics = {
+	ruling_party = monarchism
+	last_election = "1960.3.7"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 4
+	democratic_socialism = 2
+	state_socialism = 4
+	communism = 3
+	monarchism = 64
+	militarism = 15
+	authoritarianism = 8
+}
+
+create_country_leader = {
+	name = "Nazle Relle I"
+	desc = ""
+	picture = ""
+	ideology = despotist
+	traits = {
+		#
+	}
+}
