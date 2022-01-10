@@ -1,0 +1,238 @@
+focus_tree = {
+	id = freneaya_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FRE
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = the_2000_elections
+		icon = 0
+		x = 4
+		y = 0
+		cost = 4.5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = cyroy_kaolan
+		icon = 0
+		x = -2
+		y = 1
+		relative_position_id = the_2000_elections
+		cost = 1
+		
+		prerequisite = { focus = the_2000_elections }
+		
+		mutually_exclusive = { focus = hildi_nemfaros }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = hildi_nemfaros
+		icon = 0
+		x = 2
+		y = 1
+		relative_position_id = the_2000_elections
+		cost = 1
+		
+		prerequisite = { focus = the_2000_elections }
+		
+		mutually_exclusive = { focus = cyroy_kaolan }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = bolster_national_pride
+		icon = 0
+		x = 0
+		y = 1
+		relative_position_id = hildi_nemfaros
+		cost = 10
+		
+		prerequisite = { focus = hildi_nemfaros }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = celebrate_freedom
+		icon = 0
+		x = 0
+		y = 1
+		relative_position_id = cyroy_kaolan
+		cost = 10
+		
+		prerequisite = { focus = cyroy_kaolan }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = make_peace_with_the_opposition
+		icon = 0
+		x = 0
+		y = 2
+		relative_position_id = the_2000_elections
+		cost = 10
+		
+		prerequisite = { focus = hildi_nemfaros focus = cyroy_kaolan }
+		
+		available = { democratic < 0.75 }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.1 }
+		}
+	}
+	
+	focus = {
+		id = continue_industrial_development
+		icon = 0
+		x = -2
+		y = 1
+		relative_position_id = cyroy_kaolan
+		cost = 10
+		
+		prerequisite = { focus = cyroy_kaolan }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = raise_the_alarms
+		icon = 0
+		x = 0
+		y = 1
+		relative_position_id = make_peace_with_the_opposition
+		cost = 10
+		
+		prerequisite = { focus = make_peace_with_the_opposition }
+
+		available = { democratic < 0.75 }
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	
+	focus = {
+		id = a_state_of_emergency
+		icon = 0
+		x = 0
+		y = 1
+		relative_position_id = raise_the_alarms
+		cost = 10
+		
+		prerequisite = { focus = raise_the_alarms }
+
+		available = { democratic < 0.65 has_war = yes }
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_political_power = 150
+			add_war_support = 0.1
+		}
+	}
+	
+	focus = {
+		id = remove_term_length
+		icon = 0
+		x = 0
+		y = 1
+		relative_position_id = a_state_of_emergency
+		cost = 10
+		
+		prerequisite = { focus = a_state_of_emergency }
+
+		available = { has_war = yes }
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+				}
+			add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = fund_the_navy
+		icon = 0
+		x = -3
+		y = 1
+		relative_position_id = continue_industrial_development
+		cost = 10
+		
+		prerequisite = { focus = continue_industrial_development }
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+}
