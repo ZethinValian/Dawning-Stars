@@ -15,13 +15,13 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 74
-	democratic_socialism = 10
-	state_socialism = 2
-	communism = 3
-	monarchism = 6
+	democratic = 84
+	democratic_socialism = 6
+	state_socialism = 1
+	communism = 2
+	monarchism = 4
 	militarism = 0
-	authoritarianism = 5
+	authoritarianism = 3
 }
 
 create_country_leader = {
