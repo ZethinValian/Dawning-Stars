@@ -10,6 +10,31 @@ ZOH = {
 	color_ui = rgb { 149 34 181 }
 }
 
+ZOR = {
+	color = rgb { 180 50 255 }
+	color_ui = rgb { 180 50 255 }
+}
+
+VAL = {
+	color = rgb { 204 48 59 }
+	color_ui = rgb { 204 48 59 }
+}
+
+GUR = {
+	color = rgb { 43 73 37 }
+	color_ui = rgb { 43 73 37 }
+}
+
+QUE = {
+	color = rgb { 104 242 255 }
+	color_ui = rgb { 104 242 255 }
+}
+
+WJU = {
+	color = rgb { 255 135 91 }
+	color_ui = rgb { 255 135 91 }
+}
+
 FRE = {
 	color = rgb { 114 206 88 }
 	color_ui = rgb { 114 206 88 }
