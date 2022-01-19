@@ -13,3 +13,6 @@ Developers:
 -Titan
 -Tycho "Korochun"
 -Bad_Player
+-echo532
+-Guardsmen Nr97064
+-Panzer
