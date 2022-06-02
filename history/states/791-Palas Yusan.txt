@@ -1,0 +1,13 @@
+state={
+	id=791
+	name="STATE_791"
+	provinces={
+		382 2247 3404 4637 4675 5360 5965 6248 6665 7030 7232 11066 11110 11125 11193 11291 11292 11358 11405 11489 11552 11583 11613 11626 11700 
+	}
+	manpower=68000
+	buildings_max_level_factor=0
+	history = {
+		owner = MAT
+		add_core_of = SUR
+	}
+}

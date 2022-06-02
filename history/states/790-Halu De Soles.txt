@@ -1,0 +1,13 @@
+state={
+	id=790
+	name="STATE_790"
+	provinces={
+		2278 4486 9679 9759 9822 9897 9993 9994 
+	}
+	manpower=24000
+	buildings_max_level_factor=0
+	history = {
+		owner = MAT
+		add_core_of = SUR
+	}
+}

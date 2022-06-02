@@ -1,13 +1,18 @@
+
 state={
 	id=661
 	name="STATE_661"
-	provinces={
-		288 2165 2800 5157 9280 9299 9305 9331 9332 9360 9361 9407 9408 9444 9493 
-	}
-	manpower=1342000
-	buildings_max_level_factor=0
-	history = {
+
+	history={
 		owner = DEL
 		add_core_of = DEL
+
 	}
+
+	provinces={
+		288 2165 2800 5157 9280 9299 9305 9331 9332 9360 9361 9407 9408 9444 9493 19535 
+	}
+	manpower=1342000
+	buildings_max_level_factor=0.000
+	local_supplies=0.000
 }

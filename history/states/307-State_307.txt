@@ -3,9 +3,12 @@ state={
 	id=307
 	name="STATE_307"
 	provinces={
-		15558 
+		132 318 636 860 1262 1554 1787 3658 4145 4659 4762 4900 5031 5366 6084 6584 7150 7477 7478 7480 7491 7493 7494 7502 7506 7507 7512 7517 7523 7527 7541 7548 7603 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower=183201
+	buildings_max_level_factor=0
+	history = {
+		owner = MAT
+		add_core_of = MAT
+	}
 }

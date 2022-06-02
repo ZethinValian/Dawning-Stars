@@ -5,6 +5,31 @@ DEL = {
 	color_ui = rgb { 74 74 74 }
 }
 
+PHA = {
+	color = rgb { 86 255 154 }
+	color_ui = rgb { 86 255 154 }
+}
+
+CES = {
+	color = rgb { 196 56 49 }
+	color_ui = rgb { 196 56 49 }
+}
+
+YEV = {
+	color = rgb { 152 206 123 }
+	color_ui = rgb { 152 206 123 }
+}
+
+ACT = {
+	color = rgb { 122 4 142 }
+	color_ui = rgb { 122 4 142 }
+}
+
+BAG = {
+	color = rgb { 41 110 142 }
+	color_ui = rgb { 41 110 142 }
+}
+
 ZOH = {
 	color = rgb { 149 34 181 }
 	color_ui = rgb { 149 34 181 }
@@ -73,4 +98,19 @@ ELK = {
 ISU = {
 	color = rgb { 13 131 216 }
 	color_ui = rgb { 13 131 216 }
+}
+
+MAT = {
+	color = rgb { 140 0 34 }
+	color_ui = rgb { 140 0 34 }
+}
+
+SUR = {
+	color = rgb { 216 129 47 }
+	color_ui = rgb { 216 129 47 }
+}
+
+STO = {
+	color = rgb { 93 114 137 }
+	color_ui = rgb { 93 114 137 }
 }

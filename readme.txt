@@ -6,13 +6,11 @@ of development.
 VERSION: 0.0.12 "Hey look the year changed"
 
 Lead Dev: ZeeMan78
-Tech Head: ZTitan7
+Tech Head: ZeeMan78
 GFX Head: ZeeMan78
 Story Head: ZeeMan78
 Developers:
+-echo532
 -Titan
 -Tycho "Korochun"
 -Bad_Player
--echo532
--Guardsmen Nr97064
--Panzer

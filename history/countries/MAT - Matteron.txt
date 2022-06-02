@@ -1,0 +1,35 @@
+capital = 56
+
+# Starting tech
+set_technology = {
+	
+}
+
+set_convoys = 1
+
+set_politics = {
+	ruling_party = communism
+	last_election = "2000.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 1
+	democratic_socialism = 2
+	state_socialism = 6
+	communism = 89
+	monarchism = 0
+	militarism = 0
+	authoritarianism = 2
+}
+
+create_country_leader = {
+	name = "Malix Temgren"
+	desc = ""
+	picture = ""
+	ideology = malixian
+	traits = {
+		#
+	}
+}

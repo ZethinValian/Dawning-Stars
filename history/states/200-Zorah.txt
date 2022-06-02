@@ -23,13 +23,12 @@ state={
 			dockyard = 1
 
 		}
-
 	}
 
 	provinces={
-		2133 3602 9419 9431 9452 9463 15402 15410 15435 15438 15439 15461 15476 15499 15499 15506 15509 19490 
+		2133 9431 9452 9463 15461 15476 15499 15499 15506 15509 19490 
 	}
-	manpower=8692000
+	manpower=6372000
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
 	local_supplies=0.000

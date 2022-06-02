@@ -1,0 +1,35 @@
+﻿capital = 340
+
+# Starting tech
+set_technology = {
+	
+}
+
+set_convoys = 1
+
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "2000.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 5
+	democratic_socialism = 5
+	state_socialism = 5
+	communism = 5
+	monarchism = 5
+	militarism = 5
+	authoritarianism = 70
+}
+
+create_country_leader = {
+	name = "Balen Ronnel"
+	desc = ""
+	picture = ""
+	ideology = authoritarianism_ideology
+	traits = {
+		#
+	}
+}

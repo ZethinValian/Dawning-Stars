@@ -1,0 +1,13 @@
+state={
+	id=777
+	name="STATE_777"
+	provinces={
+		729 1877 2320 2428 4609 5022 6843 8011 8083 8105 8139 8168 8173 8188 8205 8213 8236 8243 8289 8290 
+	}
+	manpower=400327
+	buildings_max_level_factor=0
+	history = {
+		owner = MAT
+		add_core_of = MAT
+	}
+}

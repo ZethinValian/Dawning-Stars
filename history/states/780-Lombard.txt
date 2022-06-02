@@ -1,0 +1,19 @@
+state={
+	id=780
+	name="STATE_780"
+	provinces={
+		3602 5756 9419 15402 15410 15430 15435 15438 15439 
+	}
+	history={
+		owner = ZOH
+		add_core_of = ZOH
+		add_core_of = ZOR
+		victory_points = {
+
+		}
+	}
+	
+	manpower=4221000
+	buildings_max_level_factor=0.000
+	local_supplies=0.000
+}

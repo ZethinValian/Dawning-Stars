@@ -2,14 +2,18 @@
 state={
 	id=323
 	name="STATE_323"
-	provinces={
-		15540 15545 15552 15560 15566 15570 
-	}
-	manpower= 276000
-	buildings_max_level_factor=0
-	history = {
+
+	history={
 		owner = ISU
 		add_core_of = ISU
 		add_core_of = PON
+
 	}
+
+	provinces={
+		15540 15545 15552 15558 15560 15566 15570 
+	}
+	manpower=276000
+	buildings_max_level_factor=0.000
+	local_supplies=0.000
 }

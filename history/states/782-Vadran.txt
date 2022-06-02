@@ -1,0 +1,18 @@
+state={
+	id=782
+	name="STATE_782"
+	provinces={
+		268 1914 2232 3435 4295 5414 7206 9374 9440 9473 9566 9607 
+	}
+	history={
+		owner = DEL
+		add_core_of = DEL
+		victory_points = {
+
+		}
+	}
+	
+	manpower=1284000
+	buildings_max_level_factor=0.000
+	local_supplies=0.000
+}

@@ -5,7 +5,10 @@ state={
 	provinces={
 		839 2520 4055 4393 4577 5477 7147 8888 8892 8921 8945 8976 9029 9076 9084 9085 9138 9139 9177 9239 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower=2294620
+	buildings_max_level_factor=0
+	history = {
+		owner = MAT
+		add_core_of = STO
+	}
 }

@@ -3,9 +3,12 @@ state={
 	id=76
 	name="STATE_76"
 	provinces={
-		2089 5128 7471 7476 7522 
+		2089 4224 4651 5128 7447 7448 7452 7459 7471 7476 7522 15389 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower=105231
+	buildings_max_level_factor=0
+	history = {
+		owner = MAT
+		add_core_of = MAT
+	}
 }

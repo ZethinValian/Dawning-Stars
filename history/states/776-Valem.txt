@@ -1,0 +1,13 @@
+state={
+	id=776
+	name="STATE_776"
+	provinces={
+		925 2004 2276 2996 3665 4503 5265 5709 6435 6812 6837 6873 6988 7185 7683 7691 7699 7703 7729 7736 7742 7744 7749 7756 7766 7773 7783 7817 7827 7841 7862 7863 
+	}
+	manpower=1820321
+	buildings_max_level_factor=0
+	history = {
+		owner = MAT
+		add_core_of = MAT
+	}
+}

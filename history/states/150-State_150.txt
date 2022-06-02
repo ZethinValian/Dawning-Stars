@@ -5,7 +5,10 @@ state={
 	provinces={
 		215 335 1583 4576 4868 5032 6194 6486 8203 8228 8234 8250 8280 8285 8300 8301 8319 8320 8331 8351 8356 8375 15445 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	manpower=2994601
+	buildings_max_level_factor=0
+	history = {
+		owner = MAT
+		add_core_of = MAT
+	}
 }

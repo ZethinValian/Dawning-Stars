@@ -1,0 +1,14 @@
+
+state={
+	id=44
+	name="STATE_44"
+	provinces={
+		7212 15377 15379 15384 
+	}
+	manpower=12452
+	buildings_max_level_factor=0
+	history = {
+		owner = MAT
+		add_core_of = MAT
+	}
+}

@@ -1,0 +1,14 @@
+
+state={
+	id=789
+	name="STATE_789"
+	provinces={
+		3774 3780 3997 5063 5112 5410 10155 10235 10277 10462 10518 10618 10732 
+	}
+	manpower=223000
+	buildings_max_level_factor=0
+	history = {
+		owner = MAT
+		add_core_of = SUR
+	}
+}

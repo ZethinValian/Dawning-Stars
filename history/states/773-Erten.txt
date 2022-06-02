@@ -1,0 +1,13 @@
+state={
+	id=773
+	name="STATE_773"
+	provinces={
+		513 596 642 648 659 1499 2283 2487 2798 4603 5562 5672 5975 6003 6850 7332 7566 7580 7583 7604 7612 7615 7619 7639 7650 7674 7708 
+	}
+	manpower=216402
+	buildings_max_level_factor=0
+	history = {
+		owner = MAT
+		add_core_of = MAT
+	}
+}

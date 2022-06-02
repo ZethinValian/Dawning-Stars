@@ -1,0 +1,13 @@
+state={
+	id=771
+	name="STATE_771"
+	provinces={
+		255 1755 1778 3094 6141 6300 7845 7882 7894 7908 7925 7940 7973 7986 8004 8017 
+	}
+	manpower=2830120
+	buildings_max_level_factor=0
+	history = {
+		owner = MAT
+		add_core_of = MAT
+	}
+}
